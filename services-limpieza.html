@@ -26,14 +26,14 @@
 
 </head>
 <body>
-    <article name = 'content' class = 'pt-3'>
-        <header class = 'mx-3'>
+        <header class = 'px-3 pt-2 bg-white' style = 'position: sticky; top: 0; z-index: 2;'>
             <div class = 'row'>
                 <div class = 'col-10 d-flex'>
                     <img src="./image/image_2.png" alt="Clinica Sedmed" class = 'sermed-icon'>
-                    <p style = 'color: #006F79; font-weight: 700' class = 'pt-3 mx-3'>
+                    <a style = 'color: #006F79; font-weight: 700; text-decoration: none;' href = 'mobile-home.html'
+                      class = 'pt-3 mx-3'>
                         КЛИНИКА SERMED
-                    </p>
+                    </a>
                 </div>
                 <div class = 'col-2'>
                     <img class = 'm-1' src="./assets/icon-r7Y.png" alt="search" style="width: 2rem; height: 2rem">
@@ -147,7 +147,8 @@
 
             </div>
           </div>
-          <button class = 'w-100 border-0 rounded-5 p-2 mb-2' style = 'background-color: #14ABB5; color: white;'>
+          <button class = 'w-100 border-0 rounded-5 p-2 mb-2' style = 'background-color: #14ABB5; color: white;'
+          onclick = 'window.location.href = "https://ig.me/m/sermed_clinica_bcn"'>
             Записаться по Instagram
           </button>
         </div>
@@ -187,7 +188,7 @@
                             Facebook
                         </p>
                     </div>
-                    <div class = 'col-6 d-flex'>
+                    <div class = 'col-6 d-flex' onclick = 'window.location.href = "https://ig.me/m/sermed_clinica_bcn"'>
                         <img src="./assets/instagramm.png" alt="" style = 'height: 2rem; width: 2rem'>
                         <p style = 'color: #4B5563; font-weight: 400' class = 'pt-1 mx-3'>
                             Instagram
@@ -239,7 +240,51 @@
             </div>
             
         </footer>
-    </article>
+
+    <nav name = 'nav-mob' id = 'nav-mob' 
+    style = 'background-color:#EDFBFB; position: sticky; bottom: 0; min-height: 3rem; display: flex; z-index: 2;'>
+      <script>
+          let mobMenuOpened = false;
+          let mobileMenuSelector = e =>
+          { 
+            if (mobMenuOpened)
+              document.querySelector('#mob-menu').style.display = 'none';
+            else document.querySelector('#mob-menu').style.display = 'block';
+            mobMenuOpened = !mobMenuOpened;
+          }
+      </script>
+
+      
+
+      <div class = 'py-3 d-flex'>
+          
+          <img src="./icon/menu.svg" class = 'mx-3' alt="" style = 'height: 1.5rem; width: 1.5rem' 
+            onclick = 'mobileMenuSelector()'>
+
+          <a href="" class = 'mx-3' style = 'text-decoration: none; color: #374151; font-weight: 700;'>
+            Услуги
+          </a>
+          <a href="" class = 'mx-3' style = 'text-decoration: none; color: #374151; font-weight: 700;'>
+            Косметика
+          </a>
+          <div class = 'card-img mx-3' 
+            style = 'height: 1.5rem; width: 1.5rem; background-image: url("./assets/icon-6Uv.png");'>
+            <div class = 'float-end rounded-circle' 
+              style = 'background-color: #14ABB5; color: white; font-size: 8px; width: 12px; height: 12px;'>
+              12
+            </div>
+          </div>
+          <div class = 'd-flex mx-3'>
+            <a href="" class = 'mx-1' style = 'text-decoration: none; color: #14ABB5; font-weight: 700;'>
+              RU
+            </a>
+            <a href="" class = 'mx-1' style = 'text-decoration: none; color: #374151; font-weight: 700;'>
+              ES
+            </a>
+          </div>
+          
+      </div>
+  </nav>
     
 </body>
 </html>
