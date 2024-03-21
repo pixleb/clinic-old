@@ -44,21 +44,8 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-        .promo-frame {
-            min-height: 330px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .promo-image {
-            min-height: 165px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
         .shadow-box {
-            box-shadow: 10px dimgray;
+            box-shadow: 0px 5px 5px lightgray;
             border-radius: 20px;
             background-color: white;
         }
@@ -101,105 +88,149 @@
     <div class="d-flex">
         <img src="./icon/Icon.svg" alt="" style = 'width: 1.5rem; height: 1.5rem'>
         <h2 style = 'font-size: 20px; font-weight: 600; color: #111827;'>
-            Акции
+            Оформление заказа
         </h2>
     </div>
 </a>
 
 <br>
 
-<div class = 'px-3'>
-    <div class = 'row'>
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' style = 'background-color: #F3BAC1;'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Контурная пластика губ
-                        <span class = 'badge bg-white fs-6' style = 'color: #F43F5E;'>
-                            130 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Освежите свою улыбку с нами
-                    </h4>
-                        Уникальная акция на наполнение губ гиалуроновой кислотой!
-                </div>
-                <div class = 'col-12 withcontain promo-image' style = 'background-image: url("./static/image\ 40.png");'>
+<div class = 'mb-3'>
+    
+    <div class = 'd-flex mb-3'>
         
-                </div>
+        <div class = 'rounded-3 border border-secondary mx-1 w-50'
+            onclick = 'window.location.href = "./order-courier.html"'>
+            <input type="radio" class = 'float-end m-1'>
+            <div class = 'px-5 py-3'>
+                <a class = 'text-decoration-none text-body'>
+                    Курьером
+                </a>
             </div>
         </div>
-        <br>
 
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' style = 'background-color: #F3CFA6;'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Чистка лица + пилинг + маска
-                        <span class = 'badge bg-white fs-6' style = 'color: #F97316;'>
-                            всего за 90 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Уникальная комбинация процедур для вашей красоты
-                    </h4>
-                    Запишитесь прямо сейчас!
-                </div>
-                <div class = 'col-12 withcontain promo-image' style = 'background-image: url("./static/image\ 40\ \(1\).png");'>
-        
-                </div>
+        <div class = 'rounded-3 mx-1 w-50' style = 'border: 2px solid #14ABB5;'>
+            <input type="radio" class = 'float-end m-1' style = 'accent-color: #14ABB5;' checked>
+            <div class = 'px-5 py-3'>
+                <a class = 'text-decoration-none text-body'>
+                    Самовывоз
+                </a>
             </div>
         </div>
-        <br>
-
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' style = 'background-color: #C7D2FE;'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Ультраформер и старвак
-                        <span class = 'badge bg-white fs-6' style = 'color: #F43F5E;'>
-                            за 220 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Ваше идеальное сочетание
-                    </h4>
-                    Омоложение и подтяжка в одном пакете. Не упустите шанс!
-                </div>
-                <div class = 'col-12 withcontain promo-image' 
-                style = 'background-image: url("./static/promo_starvac_mob.png");'>
-        
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' 
-            style = 'background: linear-gradient(to bottom right, #E3E1E4, #EAE8EB)'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Губы и чистка
-                        <span class = 'badge bg-white fs-6' style = 'color: #4F46E5;'>
-                            130 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Совершенство в каждой детали
-                    </h4>
-                    Запишитесь прямо сейчас!
-                </div>
-                <div class = 'col-12 withcontain promo-image' style = 'background-image: url("./static/image\ 49.png");'>
-        
-                </div>
-            </div>
-        </div>
-        <br>
 
     </div>
+
+    <div class = 'shadow-box mb-3 p-3'>
+        <h4 class = 'fs-5 fw-bold'>
+            Адрес клиники для самовывоза 
+        </h4>
+        <p>
+            Carrer de Corsega 636 Barcelona 08026 España
+        </p>
+    
+        <h4 class = 'fs-5 fw-bold'>
+            График работы
+        </h4>
+        <p>
+            С понедельника по пятницу с 10:00 до 20:00
+        </p>
+
+        <textarea name="" id="" class = 'w-100 border rounded-3 p-2 bg-light' 
+            rows="4" placeholder="Комментарий к заказу"></textarea>
+    </div>
+
     
 
+    
+
+    <div class = 'shadow-box p-3 mb-3'>
+        <h6>
+            Получатель
+        </h6>
+        <input type="" class = 'w-100 border rounded-3 p-2 bg-light mb-4' placeholder="what">
+        <input type="" class = 'w-100 border rounded-3 p-2 bg-light mb-4' placeholder="what">
+        <input type="" class = 'w-100 border rounded-3 p-2 bg-light mb-4' placeholder="what">
+        <input type="" class = 'w-100 border rounded-3 p-2 bg-light mb-4' placeholder="what">
+
+    </div>
+
+    <div class = 'shadow-box p-3 mb-3'>
+        <h6>
+            Итог заказа
+        </h6>
+        <div class = 'row'>
+            <div class="col-3">
+                <img src="./image/page1(3block)/1.png" alt="" class = 'w-100'>
+            </div>
+            <div class="col-3">
+                <img src="./image/page1(3block)/1.png" alt="" class = 'w-100'>
+            </div>
+            <div class="col-3">
+                <img src="./image/page1(3block)/1.png" alt="" class = 'w-100'>
+            </div>
+            <div class="col-3">
+                <img src="./image/page1(3block)/1.png" alt="" class = 'w-100'>
+            </div>
+            <div class="col-3">
+                <img src="./image/page1(3block)/1.png" alt="" class = 'w-100'>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class = 'shadow-box p-3 mb-3'>
+        <div class = 'row'>
+            <div class="col-8">
+                Товары на сумму
+            </div>
+            <div class="col-4">
+                € 1 350
+            </div>
+        </div>
+
+        <div class = 'row text-muted'>
+            <div class="col-8">
+                Скидка
+            </div>
+            <div class="col-4">
+                -€ 1 350
+            </div>
+        </div>
+
+        <div class = 'row'>
+            <div class="col-8">
+                Доставка
+            </div>
+            <div class="col-4">
+                Уточняется
+            </div>
+        </div>
+
+        <div class = 'row'>
+            <div class="col-8">
+                Итого
+            </div>
+            <div class="col-4" style = 'color: #14ABB5;'>
+                € 1 350
+            </div>
+        </div>
+
+        <hr>
+
+        <button class = 'w-100 border-0 rounded-5 p-3 mb-2 text-white' style = 'background-color: #14ABB5;'
+            onclick = 'window.location.href = "./order-courier-success.html"'>
+            Оплатить заказ
+        </button>
+        <p class = 'text-muted'>
+            Нажимая кнопку «Подтвердить заказ», я подтверждаю, что достиг(ла) 18 лет и ознакомлен(а) с Политикой конфиденциальности 
+        </p>
+
+    </div>
+
 </div>
+
+      </div>
 
 
         </main>

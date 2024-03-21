@@ -22,6 +22,37 @@
             width: 4rem;
             height: 4rem;
         }
+        .card-img {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .about-frame{
+            min-height: 225px;
+            width: 100%;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .about-card-frame {
+            min-height: 190px;
+            width: 100%;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .shadow-box {
+            box-shadow: 0px 5px 5px lightgray;
+            border-radius: 20px;
+            background-color: white;
+        }
+        .withimage {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
     </style>
 
 </head>
@@ -46,298 +77,14 @@
 
         <main class = 'mx-3'>
 
-<!-- quickfix -->
-<style>
-
-    .fix-frame {
-      padding: 0% !important;
-      width: 100%;
-    }
-    .fix-inner {
-      height: 100%;
-    }
-  
-    .frame-mob {
-      padding: 0% !important;
-    }
-  
-    .autoblock {
-      max-width: 1600px;
-      @media (max-width: 1024px) {
-        max-width: 1000px;
-      }
-      margin: 0 auto;
-    }
-
-    .headframe {
-        min-height: 340px;
-        width: 100%;
-
-        background-image: url(./image/image_4.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-        
-  .fix-header {
-    margin-top: 95px;
-    margin-left: 60px;
-
-    @media (min-width: 996px) {
-      /* width: fit-content;
-      block-size: fit-content;
-      margin: 1rem auto; */
-      margin-top: 1rem;
-    }
-  }
-
-  .fix-header h1 {
-    /* font-size: 60px; */
-    font-weight: 700;
-
-    /* @media (min-width: 996px) { */
-      font-size: 20px;
-      /* width: fit-content;
-      block-size: fit-content;
-      margin: 2.5rem auto; */
-      margin-top: 2.5rem;
-    /* } */
-  }
-
-  .fix-header p {
-    font-size: 16px;
-    font-weight: 400;
-
-    @media (min-width: 996px) {
-      /* font-size: 32px;
-      width: fit-content;
-      block-size: fit-content; */
-      /* margin: 1rem auto; */
-      margin-top: 1rem;
-    }
-  }
-
-  .fix-header-image {
-    /* margin-top: 0; */
-    /* @media (min-width: 996px) { */
-      margin-top: 95px;
-    /* } */
-  }
-
-  .fix-header-image2 {
-    min-height: 280px;
-
-    background-image: url(./image/image_2024-02-22_00-57-17.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    /* @media (min-width: 996px) { */
-      background-position: center;
-    /* } */
-  }
-  
-  .header-citation-fix {
-    font-size: 18px;
-    font-weight: 400;
-
-    /* @media (min-width: 996px) { */
-      display: none !important;
-    /* } */
-  }
-
-      </style>
-
-      <div class = 'autoblock' style = 'width: 100%;'>
-        <div class = 'headframe rounded-3'>
-          <div class = 'row'>
-            <!-- <div class = 'col-xl-6 col-lg-12'> -->
-            <div class = 'col-12'>
-              <div class = 'p-3'>
-                <h1 style = 'color: #374151; font-size: 20px; font-weight: 600;'>
-                  Клиника Медицинской <br>
-                  Эстетики №1 в Барселоне!
-                </h1>
-                <p class = 'pt-1' style = 'color: #374151; font-size: 16px; font-weight: 400;'>
-                  Запишитесь на свою первую услугу и получите что то крутое, <br>
-                  Артем сейчас придумает)
-                </p>
-              </div>
-
-            </div>
-
-            <!-- <div class = 'col-xl-6 col-lg-12 fix-header-image2'> -->
-            <div class = 'col-12 fix-header-image2'>
-              <div class = 'd-flex header-citation-fix'>
-                <div style="width: 72.5%;"></div>
-                <div class = 'me-0 pe-5 mt-5'>
-                  <div class = 'w-100' style = 'height: 2rem;'>
-                    <img style = 'height: 2rem;' src="./assets/frame-2668.png"/>
-                  </div>
-                  <p class = 'pt-3'>
-                    Короткая цитата <br>
-                    от главного врача
-                  </p>
+            <a href="./catalog-all.html" style = 'text-decoration: none;'>
+                <div class="d-flex">
+                    <img src="./icon/Icon.svg" alt="" style = 'width: 1.5rem; height: 1.5rem'>
+                    <h2 style = 'font-size: 20px; font-weight: 600; color: #111827;'>
+                        Все товары
+                    </h2>
                 </div>
-              </div>
-              
-
-              <!-- <div class="" style="position: relative; top: 25%; left: 10%; font-size: 18px; width: fit-content;">
-                <div class="">
-                </div>
-                <p class="">выдающиеся специалисты</p>
-              </div> -->
-              
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- end of header -->
-
-      <!-- services -->
-      <style>
-
-    .servs {
-        white-space: nowrap;
-        @media (orientation: portrait) {
-            /* overflow-x: scroll; */
-        }
-    }
-
-    .servs-items {
-        display: flex;
-        border-radius: 6px;
-        overflow-x: scroll;
-    }
-
-    .servs-item {
-        background-color: #EDFBFB;
-        color: #1F2937;
-        font-size: 16px;
-    }
-
-      </style>
-
-      <div class = 'servs'>
-        <div class = 'servs-items mx-3'>
-            <div class = 'servs-item rounded p-2 m-2'>
-                <a href="./mobile-promos.html" class = 'text-decoration-none text-body'>
-                  Акции
-                </a>
-            </div>
-            <div class = 'servs-item rounded p-2 m-2'>
-              <a href="./catalog-all.html" class = 'text-decoration-none text-body'>
-                Косметика профессиональная
-              </a>
-            </div>
-            <div class = 'servs-item rounded p-2 m-2'>
-                Еще что то
-            </div>
-            <div class = 'servs-item rounded p-2 m-2'>
-                Аренда кабинета
-            </div>
-        </div>
-
-
-      </div>
-
-      <style>
-
-        .withimage {
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-
-      </style>
-
-      <div class = 'mt-4 px-3'>
-          <h2 style = 'font-size: 20px; font-weight: 600; color: #111827;'>
-            Популярные услуги
-          </h2>
-
-          <div class = ''>
-            <div class = 'row'>
-              <a href="./services-aumento.html" style = 'text-decoration: none;'>
-              <div class = 'col-12 withimage rounded-3 my-1' 
-                   style = 'background-image: url("./image/page1(2block)/aumento.png");
-                            height: 12rem;'>
-                <h3 class = 'pt-3 ms-2'
-                    style = 'font-size: 18px; font-weight: 700; color: #374151;'>
-                  Aumento de labios
-                </h3>
-              </div>
-              </a>
-  
-              <a href="./mobile-services-price.html" style = 'text-decoration: none;'>
-              <div class = 'col-12 withimage rounded-3 my-1' 
-                   style = 'background-image: url("./image/page1(2block)/marcacion.png");
-                            height: 12rem;'>
-                <h3 class = 'pt-3 ms-2'
-                    style = 'font-size: 18px; font-weight: 700; color: #374151;'>
-                    Marcación mandibular
-                </h3>
-  
-              </div>
-              </a>
-  
-              <a href="./mobile-services-price.html" style = 'text-decoration: none;'>
-              <div class = 'col-12 withimage rounded-3 my-1' 
-                   style = 'background-image: url("./image/page1(2block)/bioveritalizacion.png");
-                            height: 12rem;'>
-                <h3 class = 'pt-3 ms-2'
-                    style = 'font-size: 18px; font-weight: 700; color: #374151;'>
-                    Bioveritalizacion
-                </h3>
-  
-              </div>
-              </a>
-  
-              <a href="./services-limpieza.html" style = 'text-decoration: none;'>
-              <div class = 'col-12 withimage rounded-3 my-1' 
-                   style = 'background-image: url("./image/page1(2block)/lipiezadecutis.png");
-                            height: 12rem;'>
-                <h3 class = 'pt-3 ms-2'
-                    style = 'font-size: 18px; font-weight: 700; color: #374151;'>
-                    Limpieza de cutis
-                </h3>
-  
-              </div>
-              </a>
-  
-              <a href="./services-ultraformer.html" style = 'text-decoration: none;'>
-              <div class = 'col-12 withimage rounded-3 my-1' 
-                   style = 'background-image: url("./image/page1(2block)/ultraformer3.png");
-                            height: 12rem;'>
-                <h3 class = 'pt-3 ms-2'
-                    style = 'font-size: 18px; font-weight: 700; color: #374151;'>
-                    Ultraformer 3
-                </h3>
-  
-              </div>
-              </a>
-  
-              <a href="./mobile-services-price.html" style = 'text-decoration: none;'>
-              <div class = 'col-12 withimage rounded-3 my-1' 
-                   style = 'background-image: url("./image/page1(2block)/botox.png");
-                            height: 12rem;'>
-                <h3 class = 'pt-3 ms-2'
-                    style = 'font-size: 18px; font-weight: 700; color: #374151;'>
-                    Botox
-                </h3>
-  
-              </div>
-              </a>
-  
-            </div>
-            
-        </div>
-
-      <button class = 'rounded border-0 my-3 w-100' style = 'padding: 14px 10px; background: #EDFBFB;'
-        onclick = 'window.location.href = "./mobile-services.html"'>
-        Смотреть все услуги
-      </button>
+            </a>
 
       <style>
         .card-img {
@@ -363,13 +110,26 @@
         }
       </style>
 
+      <div class = 'row mt-4 px-3'>
+        <div class = 'col-12 mb-3'>
+            <div class = 'row rounded-4 promo-frame' style = 'background-color: #F9FAFB;'>
+                <div class = 'col-12 p-3 pb-0'>
+                    <h3 class = 'fs-1 fw-bold pt-3'>
+                        Профессиональная косметика BABOR
+                    </h3>
+                    Это индивидуально подобранный ежедневный уход, подходящий для конкретного типа кожи и её текущего состояния. С заботой о природе: новые продукты линии SKINOVAGE не упаковываются в пластиковую плёнку и не содержат ингредиентов животного происхождения, глютена, лактозы, силиконов, парабенов, минеральных масел, микропластика и синтетических отдушек. 
+                </div>
+                <img src = './static/image 11.png' class = 'w-100'>
+            </div>
+        </div>
+      </div>
+
       <div class="row mt-4">
         <h2 style = 'font-size: 20px; font-weight: 600; color: #111827;'>
           Бестселлеры профессиональной косметики
         </h2>
 <!-- <img class="in-basket" src="./image/page1(3block)/basket.png"/> -->
         <div class = 'col-6 my-2'>
-          <a href="./item.html" class = 'text-decoration-none'>
           <div class = 'card-img p-3' style = 'background-image: url("./image/page1(3block)/1.png");
                                            height: 8.5rem;'>
             <img src="./image/basket/basket.png" alt="" class = 'float-end' 
@@ -388,12 +148,10 @@
               € 1 500
             </span>
           </p>
-        </a>
           
         </div>
 
         <div class = 'col-6 my-2'>
-          <a href="./item.html" class = 'text-decoration-none'>
           <div class = 'card-img p-3' style = 'background-image: url("./image/page1(3block)/1.png");
                                            height: 8.5rem;'>
             <img src="./image/basket/basket.png" alt="" class = 'float-end' 
@@ -412,12 +170,10 @@
               € 1 500
             </span>
           </p>
-        </a>
           
         </div>
 
         <div class = 'col-6 my-2'>
-          <a href="./item.html" class = 'text-decoration-none'>
           <div class = 'card-img p-3' style = 'background-image: url("./image/page1(3block)/1.png");
                                            height: 8.5rem;'>
             <img src="./image/basket/basket.png" alt="" class = 'float-end' 
@@ -436,12 +192,10 @@
               € 1 500
             </span>
           </p>
-        </a>
           
         </div>
 
         <div class = 'col-6 my-2'>
-          <a href="./item.html" class = 'text-decoration-none'>
           <div class = 'card-img p-3' style = 'background-image: url("./image/page1(3block)/1.png");
                                            height: 8.5rem;'>
             <img src="./image/basket/basket.png" alt="" class = 'float-end' 
@@ -460,11 +214,10 @@
               € 1 500
             </span>
           </p>
-        </a>
+          
         </div>
 
         <div class = 'col-6 my-2'>
-          <a href="./item.html" class = 'text-decoration-none'>
           <div class = 'card-img p-3' style = 'background-image: url("./image/page1(3block)/1.png");
                                            height: 8.5rem;'>
             <img src="./image/basket/basket.png" alt="" class = 'float-end' 
@@ -483,12 +236,10 @@
               € 1 500
             </span>
           </p>
-        </a>
+          
         </div>
 
-        
         <div class = 'col-6 my-2'>
-          <a href="./item.html" class = 'text-decoration-none'>
           <div class = 'card-img p-3' style = 'background-image: url("./image/page1(3block)/1.png");
                                            height: 8.5rem;'>
             <img src="./image/basket/basket.png" alt="" class = 'float-end' 
@@ -507,88 +258,8 @@
               € 1 500
             </span>
           </p>
-        </a>
+          
         </div>
-
-      </div>
-
-
-      <div class = 'row mt-4'>
-        <a href="./catalog-babor.html" class = 'text-decoration-none'>
-        <div class = 'col-12 withimage rounded my-1' 
-          style="background-image: url('./assets/Group\ 40067.png'); background-color: #FEF2F2; height: 14.5rem;">
-
-          <h3 class = 'm-4' style = 'color: #374151; font-size: 24px; font-weight: 700;'>
-            BABOR SKINOVAGE
-          </h3>
-
-        </div>
-        </a>
-
-        <a href="./catalog-babor.html" class = 'text-decoration-none'>
-        <div class = 'col-12 withimage rounded my-1' 
-          style="background-image: url('./assets/Group\ 40068.png'); background-color: #F7FEE7; height: 14.5rem;">
-
-          <h3 class = 'm-4' style = 'color: #374151; font-size: 24px; font-weight: 700;'>
-            CHRISTINA
-          </h3>
-
-        </div>
-        </a>
-      </div>
-
-      <style>
-        .mob-img {
-          height: 6rem;
-          width: 3rem;
-        }
-      </style>
-
-      <div class = 'row mt-4 mb-1 px-3' style = 'background-color: #EDFBFB;'>
-
-        <div class = 'col-12 mt-4 rounded-3 bg-white'> 
-          <div class = 'row'>
-            <div class = 'col-2 h-50 p-0 ps-1 pt-3' >
-              <img src="./image/page1(5block)/whats.png" class = 'mob-img' alt="">
-            </div>
-            <div class = 'col-9'>
-              <h4 class = 'pt-3' style = 'color: #111827; font-size: 18px; font-weight: 700;'>
-                Записаться на приём в клинику по WhatsApp
-              </h4>
-              <p style = 'color: #111827; font-weight: 400;'>
-                Оставьте заявку и администратор нашей клиники посоветует оптимальную для вас процедуру и порекомендует нужного специалиста
-              </p>
-
-              
-
-            </div>
-          </div>
-          <button class = 'w-100 border-0 rounded-5 p-2 mb-2' style = 'background-color: #14ABB5; color: white;'>
-            Записаться по WhatsApp
-          </button>
-        </div>
-
-        <div class = 'col-12 mt-3 mb-4 rounded-3 bg-white'> 
-          <div class = 'row'>
-            <div class = 'col-2 h-50 p-0 ps-1 pt-3' >
-              <img src="./image/page1(5block)/inst.png" class = 'mob-img' alt="">
-            </div>
-            <div class = 'col-9'>
-              <h4 class = 'pt-3' style = 'color: #111827; font-size: 18px; font-weight: 700;'>
-                Записаться на приём в клинику по Instagram
-              </h4>
-              <p style = 'color: #111827; font-weight: 400;'>
-                Оставьте заявку и администратор нашей клиники посоветует оптимальную для вас процедуру и порекомендует нужного специалиста
-              </p>
-
-            </div>
-          </div>
-          <button class = 'w-100 border-0 rounded-5 p-2 mb-2' style = 'background-color: #14ABB5; color: white;'
-            onclick = 'window.location.href = "https://ig.me/m/sermed_clinica_bcn"'>
-            Записаться по Instagram
-          </button>
-        </div>
-        
 
       </div>
 
@@ -640,20 +311,17 @@
                     <h3 style = 'font-size: 16px; font-weight: 700; color: #4B5563;'>
                         Клиника Sermed
                     </h3>
-                    <p style = 'font-weight: 400; color: #4B5563;' 
-                    onclick = 'window.location.href = "./mobile-about"'>
+                    <a style = 'font-weight: 400; color: #4B5563;' href = './mobile-about.html'
+                      class = 'text-decoration-none'>
                         О компании
-                    </p>
-                    <p style = 'font-weight: 400; color: #4B5563;' 
-                    onclick = 'window.location.href = "./mobile-contacts.html"'>
+                    </a> <br>
+                    <p style = 'font-weight: 400; color: #4B5563;'>
                         Контакты
                     </p>
-                    <p style = 'font-weight: 400; color: #4B5563;' 
-                    onclick = 'window.location.href = ""'>
+                    <p style = 'font-weight: 400; color: #4B5563;'>
                         Реквизиты
                     </p>
-                    <p style = 'font-weight: 400; color: #4B5563;' 
-                    onclick = 'window.location.href = ""'>
+                    <p style = 'font-weight: 400; color: #4B5563;'>
                         Косметологические и медицинские услуги
                     </p>
 
@@ -663,20 +331,16 @@
                     <h3 style = 'font-size: 16px; font-weight: 700; color: #4B5563;'>
                         Косметика
                     </h3>
-                    <p style = 'font-weight: 400; color: #4B5563;' 
-                    onclick = 'window.location.href = "./catalog-babor.html"'>
+                    <p style = 'font-weight: 400; color: #4B5563;'>
                         BABOR SKINOVAGE
                     </p>
-                    <p style = 'font-weight: 400; color: #4B5563;'
-                    onclick = 'window.location.href = "./catalog-babor.html"'>
+                    <p style = 'font-weight: 400; color: #4B5563;'>
                         CHRISTINA
                     </p>
-                    <p style = 'font-weight: 400; color: #4B5563;' 
-                    onclick = 'window.location.href = "./mobile-pay.html"'>
+                    <p style = 'font-weight: 400; color: #4B5563;'>
                         Оплата
                     </p>
-                    <p style = 'font-weight: 400; color: #4B5563;' 
-                    onclick = 'window.location.href = "./delivery-desc-courier"'>
+                    <p style = 'font-weight: 400; color: #4B5563;'>
                         Доставка
                     </p>
                 </div>
@@ -752,10 +416,9 @@
           <a href="./mobile-services.html" class = 'mx-3' style = 'text-decoration: none; color: #374151; font-weight: 700;'>
             Услуги
           </a>
-          <a href="./catalog-all.html" class = 'mx-3' style = 'text-decoration: none; color: #374151; font-weight: 700;'>
+          <a href="" class = 'mx-3' style = 'text-decoration: none; color: #374151; font-weight: 700;'>
             Косметика
           </a>
-          <a href="./cart.html">
           <div class = 'card-img mx-3' 
             style = 'height: 1.5rem; width: 1.5rem; background-image: url("./assets/icon-6Uv.png");'>
             <div class = 'float-end rounded-circle' 
@@ -763,7 +426,6 @@
               12
             </div>
           </div>
-          </a>
           <div class = 'd-flex mx-3'>
             <a href="" class = 'mx-1' style = 'text-decoration: none; color: #14ABB5; font-weight: 700;'>
               RU

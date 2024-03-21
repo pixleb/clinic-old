@@ -44,21 +44,8 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-        .promo-frame {
-            min-height: 330px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .promo-image {
-            min-height: 165px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
         .shadow-box {
-            box-shadow: 10px dimgray;
+            box-shadow: 0px 5px 5px lightgray;
             border-radius: 20px;
             background-color: white;
         }
@@ -101,105 +88,102 @@
     <div class="d-flex">
         <img src="./icon/Icon.svg" alt="" style = 'width: 1.5rem; height: 1.5rem'>
         <h2 style = 'font-size: 20px; font-weight: 600; color: #111827;'>
-            Акции
+            Получение заказа
         </h2>
     </div>
 </a>
 
 <br>
 
-<div class = 'px-3'>
-    <div class = 'row'>
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' style = 'background-color: #F3BAC1;'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Контурная пластика губ
-                        <span class = 'badge bg-white fs-6' style = 'color: #F43F5E;'>
-                            130 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Освежите свою улыбку с нами
-                    </h4>
-                        Уникальная акция на наполнение губ гиалуроновой кислотой!
-                </div>
-                <div class = 'col-12 withcontain promo-image' style = 'background-image: url("./static/image\ 40.png");'>
-        
-                </div>
-            </div>
-        </div>
-        <br>
+<div class = 'mb-3'>
+    <h3 class = 'mb-3'>
+        Способы получения заказа
+    </h3>
 
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' style = 'background-color: #F3CFA6;'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Чистка лица + пилинг + маска
-                        <span class = 'badge bg-white fs-6' style = 'color: #F97316;'>
-                            всего за 90 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Уникальная комбинация процедур для вашей красоты
-                    </h4>
-                    Запишитесь прямо сейчас!
-                </div>
-                <div class = 'col-12 withcontain promo-image' style = 'background-image: url("./static/image\ 40\ \(1\).png");'>
-        
-                </div>
+    
+    <div class = 'd-flex mb-3'>
+        <div class = 'rounded-3 mx-1 w-50' style = 'border: 2px solid #14ABB5;'>
+            <input type="radio" class = 'float-end m-1' style = 'accent-color: #14ABB5;' checked>
+            <div class = 'px-5 py-3'>
+                <a class = 'text-decoration-none text-body'>
+                    Курьером
+                </a>
             </div>
         </div>
-        <br>
 
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' style = 'background-color: #C7D2FE;'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Ультраформер и старвак
-                        <span class = 'badge bg-white fs-6' style = 'color: #F43F5E;'>
-                            за 220 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Ваше идеальное сочетание
-                    </h4>
-                    Омоложение и подтяжка в одном пакете. Не упустите шанс!
-                </div>
-                <div class = 'col-12 withcontain promo-image' 
-                style = 'background-image: url("./static/promo_starvac_mob.png");'>
-        
-                </div>
+        <div class = 'rounded-3 border border-secondary mx-1 w-50'
+            onclick = 'window.location.href = "./delivery-desc-self.html"'>
+            <input type="radio" class = 'float-end m-1'>
+            <div class = 'px-5 py-3'>
+                <a class = 'text-decoration-none text-body'>
+                    Самовывоз
+                </a>
             </div>
         </div>
-        <br>
-
-        <div class = 'col-12 mb-3'>
-            <div class = 'row rounded-4 promo-frame' 
-            style = 'background: linear-gradient(to bottom right, #E3E1E4, #EAE8EB)'>
-                <div class = 'col-12 p-3 pb-0'>
-                    <h3 class = 'fs-1 fw-bold pt-3'>
-                        Губы и чистка
-                        <span class = 'badge bg-white fs-6' style = 'color: #4F46E5;'>
-                            130 евро!
-                        </span>
-                    </h3>
-                    <h4 class = 'fw-bold fs-5'>
-                        Совершенство в каждой детали
-                    </h4>
-                    Запишитесь прямо сейчас!
-                </div>
-                <div class = 'col-12 withcontain promo-image' style = 'background-image: url("./static/image\ 49.png");'>
-        
-                </div>
-            </div>
-        </div>
-        <br>
 
     </div>
-    
 
+    <input type="" class = 'w-100 border rounded-3 p-2 bg-light mb-4'
+        placeholder="Выберете ваш населённый пункт">
+
+    <div class = 'shadow-box px-4 mb-3'>
+        <h4 class = 'fs-5 fw-bold'>
+            Доставка заказа осуществляется услугами почтовых отправлений.
+        </h4>
+        <p>
+            После оформления заказа, наш менеджер свяжется с вами для согласования доставки в ваш регион.
+        </p>
+
+        <h4 class = 'fs-5 fw-bold'>
+            Контактный телефон
+        </h4>
+        <p>
+            +34 931 89 39 42
+        </p>
+
+        <div class = 'd-flex'>
+            <h4 class = 'fs-5 me-3 fw-normal'>
+                Стоимость:
+            </h4>
+            <p class = 'fw-bold' style = 'color: #14ABB5;'>
+                По тарифу почтового отделения
+            </p>
+        </div>
+
+    </div>
+
+    <div class = 'row'>
+        <div class = 'col-12 mb-3'>
+            <h4 class = 'fs-6 fw-bold'>
+                Доставим как можно быстрее
+            </h4>
+            <p>
+                Заказ оформленный до 12:00 может быть доставлен уже на следующий день
+            </p>
+        </div>
+
+        <div class = 'col-12 mb-3'>
+            <h4 class = 'fs-6 fw-bold'>
+                Будем на связи
+            </h4>
+            <p>
+                В назначенный день с вами свяжется курьер за час до запланированного времени доставки. Точная информация о дате и времени доставки будет доступна только после подтверждения заказа.
+            </p>
+        </div>
+
+        <div class = 'col-12 mb-3'>
+            <h4 class = 'fs-6 fw-bold'>
+                Сроки доставки
+            </h4>
+            <p>
+                Возможность доставки, точные сроки и доступные интервалы зависят от указанного адреса получения заказа. Даты и интервалы, доступные для доставки, будут указаны при оформлении заказа.
+            </p>
+        </div>
+
+    </div>
 </div>
+
+      </div>
 
 
         </main>
