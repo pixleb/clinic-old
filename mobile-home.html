@@ -22,6 +22,25 @@
             width: 4rem;
             height: 4rem;
         }
+
+        .mob-inviz {
+          @media (orientation: portrait){
+            display: none !important;
+          }
+        }
+        .desk-inviz {
+          @media (orientation: landscape){
+            display: none !important;
+          }
+        }
+
+        .autoblock {
+          max-width: 996px;
+          @media (max-width: 996px) {
+           max-width: 768px;
+          }
+          margin: 0 auto;
+        }
     </style>
 
 </head>
@@ -60,18 +79,15 @@
     .frame-mob {
       padding: 0% !important;
     }
-  
-    .autoblock {
-      max-width: 1600px;
-      @media (max-width: 1024px) {
-        max-width: 1000px;
-      }
-      margin: 0 auto;
-    }
 
     .headframe {
         min-height: 340px;
         width: 100%;
+
+        @media (min-width: 996px) {
+          /* min-height: 520px; */
+          padding-top: 95px;
+        }
 
         background-image: url(./image/image_4.png);
         background-size: cover;
@@ -151,7 +167,7 @@
         <div class = 'headframe rounded-3'>
           <div class = 'row'>
             <!-- <div class = 'col-xl-6 col-lg-12'> -->
-            <div class = 'col-12'>
+            <div class = 'col-12 col-lg-6'>
               <div class = 'p-3'>
                 <h1 style = 'color: #374151; font-size: 20px; font-weight: 600;'>
                   Клиника Медицинской <br>
@@ -166,7 +182,7 @@
             </div>
 
             <!-- <div class = 'col-xl-6 col-lg-12 fix-header-image2'> -->
-            <div class = 'col-12 fix-header-image2'>
+            <div class = 'col-12 fix-header-image2 col-lg-6'>
               <div class = 'd-flex header-citation-fix'>
                 <div style="width: 72.5%;"></div>
                 <div class = 'me-0 pe-5 mt-5'>
@@ -270,7 +286,7 @@
               </div>
               </a>
   
-              <a href="./mobile-services-price.html" style = 'text-decoration: none;'>
+              <!-- <a href="./mobile-services-price.html" style = 'text-decoration: none;'>
               <div class = 'col-12 withimage rounded-3 my-1' 
                    style = 'background-image: url("./image/page1(2block)/marcacion.png");
                             height: 12rem;'>
@@ -280,9 +296,9 @@
                 </h3>
   
               </div>
-              </a>
+              </a> -->
   
-              <a href="./mobile-services-price.html" style = 'text-decoration: none;'>
+              <!-- <a href="./mobile-services-price.html" style = 'text-decoration: none;'>
               <div class = 'col-12 withimage rounded-3 my-1' 
                    style = 'background-image: url("./image/page1(2block)/bioveritalizacion.png");
                             height: 12rem;'>
@@ -292,9 +308,9 @@
                 </h3>
   
               </div>
-              </a>
+              </a> -->
   
-              <a href="./services-limpieza.html" style = 'text-decoration: none;'>
+              <!-- <a href="./services-limpieza.html" style = 'text-decoration: none;'>
               <div class = 'col-12 withimage rounded-3 my-1' 
                    style = 'background-image: url("./image/page1(2block)/lipiezadecutis.png");
                             height: 12rem;'>
@@ -304,7 +320,7 @@
                 </h3>
   
               </div>
-              </a>
+              </a> -->
   
               <a href="./services-ultraformer.html" style = 'text-decoration: none;'>
               <div class = 'col-12 withimage rounded-3 my-1' 
@@ -729,7 +745,7 @@
     </div>
   </aside>
 
-  <nav name = 'nav-mob' id = 'nav-mob' 
+  <nav name = 'nav-mob' id = 'nav-mob' class = 'desk-inviz'
     style = 'background-color:#EDFBFB; position: sticky; bottom: 0; min-height: 3rem; display: flex; z-index: 2;'>
       <script>
           let mobMenuOpened = false;
