@@ -266,15 +266,32 @@
 
     <nav name = 'nav-mob' id = 'nav-mob' 
     style = 'background-color:#EDFBFB; position: sticky; bottom: 0; min-height: 3rem; display: flex; z-index: 2;'>
-      <script>
+    <script>
+        // я знаю, что это жуткий говнокод, но времени делать нормально сейчас попросту нет
           let mobMenuOpened = false;
+          let savedScroll = 0;
           let mobileMenuSelector = e =>
           { 
-            if (mobMenuOpened)
+            if (mobMenuOpened) {
               document.querySelector('#mob-menu').style.display = 'none';
-            else document.querySelector('#mob-menu').style.display = 'block';
+              document.querySelector('main').style.display = 'block';
+              document.querySelector('footer').style.display = 'block';
+              window.scrollTo(0, savedScroll);
+            }
+              
+            else {
+              savedScroll = window.scrollY;
+              document.querySelector('#mob-menu').style.display = 'block';
+              document.querySelector('main').style.display = 'none';
+              document.querySelector('footer').style.display = 'none';
+            }
             mobMenuOpened = !mobMenuOpened;
           }
+
+          // document.addEventListener('scroll', e => {
+          //   console.log('scrolled')
+          //   if (mobMenuOpened){ e.preventDefault(); console.log('scroll deprecated')}
+          // })
       </script>
 
       
