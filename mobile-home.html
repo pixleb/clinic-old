@@ -174,8 +174,7 @@
                   Эстетики №1 в Барселоне!
                 </h1>
                 <p class = 'pt-1' style = 'color: #374151; font-size: 16px; font-weight: 400;'>
-                  Запишитесь на свою первую услугу и получите что то крутое, <br>
-                  Артем сейчас придумает)
+                  Запишитесь на свою первую услугу и получите незабываемые впечатления уже сегодня!
                 </p>
               </div>
 
@@ -583,7 +582,8 @@
 
             </div>
           </div>
-          <button class = 'w-100 border-0 rounded-5 p-2 mb-2' style = 'background-color: #14ABB5; color: white;'>
+          <button class = 'w-100 border-0 rounded-5 p-2 mb-2' style = 'background-color: #14ABB5; color: white;'
+            onclick="window.location.href = 'https://wa.me/message/NNSZZAOJOMDYK1'">
             Записаться по WhatsApp
           </button>
         </div>
@@ -715,8 +715,8 @@
   </style>
 
   <aside id = 'mob-menu' class = 'w-100 h-100 bg-white px-3' 
-    style = 'display: none; position: absolute; top: 0; left: 0; height: 100vh; z-index: 1;'>
-    <div style="margin-top: 7.5rem;">
+    style = 'display: none; position: relative; top: 0; left: 0; min-height: 80vh; z-index: 1;'>
+    <div class = 'pt-3'>
       <p style = 'text-decoration: none; color: #374151; font-weight: 700;'>
         Все услуги
       </p>
@@ -752,14 +752,31 @@
   <nav name = 'nav-mob' id = 'nav-mob' class = 'desk-inviz'
     style = 'background-color:#EDFBFB; position: sticky; bottom: 0; min-height: 3rem; display: flex; z-index: 2;'>
       <script>
+        // я знаю, что это жуткий говнокод, но времени делать нормально сейчас попросту нет
           let mobMenuOpened = false;
+          let savedScroll = 0;
           let mobileMenuSelector = e =>
           { 
-            if (mobMenuOpened)
+            if (mobMenuOpened) {
               document.querySelector('#mob-menu').style.display = 'none';
-            else document.querySelector('#mob-menu').style.display = 'block';
+              document.querySelector('main').style.display = 'block';
+              document.querySelector('footer').style.display = 'block';
+              window.scrollTo(0, savedScroll);
+            }
+              
+            else {
+              savedScroll = window.scrollY;
+              document.querySelector('#mob-menu').style.display = 'block';
+              document.querySelector('main').style.display = 'none';
+              document.querySelector('footer').style.display = 'none';
+            }
             mobMenuOpened = !mobMenuOpened;
           }
+
+          // document.addEventListener('scroll', e => {
+          //   console.log('scrolled')
+          //   if (mobMenuOpened){ e.preventDefault(); console.log('scroll deprecated')}
+          // })
       </script>
 
       
